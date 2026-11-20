@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="gloss-clustering" xml:lang="en-GB">
+  <glossterm>clustering</glossterm>
+  <glossdef>Finding groups of nearby positions on the map of meaning.</glossdef>
+</glossentry>

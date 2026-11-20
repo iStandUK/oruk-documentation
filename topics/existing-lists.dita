@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="existing-lists" xml:lang="en-GB">
+  <title>The existing local-government lists are kept as evidence</title>
+  <shortdesc>Categories that directories already supply are not thrown away; they support the new classification without shaping it.</shortdesc>
+  <conbody>
+    <p>Where a directory supplies local-government categories, they are kept as supporting
+      evidence. They help to check and describe the groups the computer finds.</p>
+    <p>A cross-reference from the new categories back to those lists can be published
+      separately.</p>
+  </conbody>
+</concept>

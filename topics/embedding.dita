@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="embedding" xml:lang="en-GB">
+  <title>An embedding: a map reference for meaning</title>
+  <shortdesc>An embedding turns a piece of text into a position, so that texts with similar meanings land close together.</shortdesc>
+  <conbody>
+    <p>Think of an <term keyref="gloss-embedding">embedding</term> as a reference on a very
+      large map. “Gentle stretching class” and “chair-based yoga”
+      share almost no words, but they land in the same neighbourhood. “Debt advice” lands a
+      long way off.</p>
+    <p>The real map has around a thousand directions, not two, but the idea is the same.
+      Closeness on the map stands for similarity of meaning.</p>
+    <fig>
+      <title>A map of meaning: similar services sit close together</title>
+      <image href="../images/meaning-map.svg" placement="break" scalefit="yes">
+        <alt>Dots representing listings form four groups: gentle exercise, help with food, money advice, and company and conversation. Two listings, a Christmas market and a parish council page, fit no group. A search for somewhere calm to exercise after having a baby lands beside the gentle exercise group.</alt>
+      </image>
+    </fig>
+    <p>This is what lets a computer treat “somewhere calm to exercise after having a baby”
+      as a request for something like postnatal yoga, though the two phrases have no words in
+      common.</p>
+  </conbody>
+</concept>

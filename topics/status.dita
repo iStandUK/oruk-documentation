@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="status" xml:lang="en-GB">
+  <title>Where things stand</title>
+  <shortdesc>The position of each part of the work in November 2026; the classification itself does not exist yet.</shortdesc>
+  <refbody>
+    <section>
+      <p>This is a proof of concept. It runs on one computer, and nothing is hosted for outside
+        users.</p>
+    </section>
+    <table frame="all" rowsep="1" colsep="1">
+      <title>State of each part, November 2026</title>
+      <tgroup cols="2">
+        <colspec colname="c1" colwidth="2*"/><colspec colname="c2" colwidth="3*"/>
+        <thead>
+          <row><entry>Part</entry><entry>State</entry></row>
+        </thead>
+        <tbody>
+          <row><entry>Design and rationale</entry><entry>Written up in a research study, with the main decisions recorded</entry></row>
+          <row><entry>Gathering and cleaning the listings</entry><entry>Being built; the common record format and its rules are defined</entry></row>
+          <row><entry>The AI reader</entry><entry>Speed and repeatability measured; the whole collection can be processed in one to two nights</entry></row>
+          <row><entry>Mapping and grouping tools</entry><entry>Confirmed to work on the project's computer</entry></row>
+          <row><entry>The classification, version 1.0</entry><entry>Not started; it depends on the steps above</entry></row>
+          <row><entry>Search</entry><entry>Designed, not built</entry></row>
+          <row><entry>Hosting for professionals and the public</entry><entry>Deliberately deferred until the proof of concept has been assessed</entry></row>
+        </tbody>
+      </tgroup>
+    </table>
+    <section>
+      <title>What the proof of concept will produce</title>
+      <ul>
+        <li>a draft classification</li>
+        <li>a working local search that AI assistants can use</li>
+        <li>measurements of how well real needs are met</li>
+      </ul>
+      <p>These are offered as reference material for councils and suppliers to build on.</p>
+    </section>
+  </refbody>
+</reference>

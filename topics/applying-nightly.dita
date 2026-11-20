@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="applying-nightly" xml:lang="en-GB">
+  <title>Applying the classification every night</title>
+  <shortdesc>Each night, new and changed listings are restated, shortlisted, judged and, where necessary, escalated or logged.</shortdesc>
+  <conbody>
+    <p>The second job is routine and automatic. Each night the harvester picks up listings that
+      are new or have changed. For each one:</p>
+    <ol>
+      <li><b>Restate.</b> The same language model fills in the same form.</li>
+      <li><b>Shortlist.</b> The listing's position on the map is compared with the position of
+        each category's definition, and the ten nearest categories are taken.</li>
+      <li><b>Judge.</b> The language model chooses from that shortlist, applying each
+        category's includes and excludes. It gives one main category and at most two others,
+        quotes its evidence, and says how confident it is. It is allowed to answer “none of
+        these”.</li>
+      <li><b>Escalate.</b> If confidence is low, or the shortlist and the judge disagree, the
+        case goes to a stronger model.</li>
+      <li><b>Log what does not fit.</b> Listings that match no category are recorded as
+        suggestions for the next version of the classification.</li>
+    </ol>
+  </conbody>
+</concept>

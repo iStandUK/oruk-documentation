@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="audience-separate-from-type" xml:lang="en-GB">
+  <title>Audience is kept out of the service type</title>
+  <shortdesc>Who a service is for is recorded separately from what the service is, which keeps every list short.</shortdesc>
+  <conbody>
+    <p>“Pregnancy yoga” is recorded as <i>yoga</i> plus <i>for pregnant women</i>. It is
+      not a category of its own.</p>
+    <p>Without this rule the list of service types would multiply into every activity combined
+      with every audience, and would stop being useful for search.</p>
+  </conbody>
+</concept>

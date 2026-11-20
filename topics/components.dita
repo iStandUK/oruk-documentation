@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="components" xml:lang="en-GB">
+  <title>How the parts fit together</title>
+  <shortdesc>The work is divided into separate components, each doing one job and passing a defined output to the next.</shortdesc>
+  <conbody>
+    <p>Each component is kept in its own repository. Components exchange files in agreed,
+      versioned formats and share no program code, so any one of them can be replaced or reused
+      on its own.</p>
+    <fig>
+      <title>The components and what passes between them</title>
+      <image href="../images/components.svg" placement="break" scalefit="yes">
+        <alt>Directories feed a gather-and-clean component. Its output goes to a component that builds the classification occasionally and to a component that labels every listing nightly. The classification and the labels go to a search component, which serves AI assistants, professionals and the public.</alt>
+      </image>
+    </fig>
+  </conbody>
+</concept>

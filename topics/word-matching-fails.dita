@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="word-matching-fails" xml:lang="en-GB">
+  <title>Matching on words does not work</title>
+  <shortdesc>An earlier attempt with keyword rules could not tell a service from a page that merely mentions it.</shortdesc>
+  <conbody>
+    <p>An earlier attempt used 63 keyword rules. It had three weaknesses.</p>
+    <ul>
+      <li>It could not tell “we run yoga classes” from “find a yoga class near you”,
+        because both contain the word “yoga”.</li>
+      <li>Rules tuned on one council's writing style did worse on another's.</li>
+      <li>About one listing in seven matched no rule at all.</li>
+    </ul>
+  </conbody>
+</concept>

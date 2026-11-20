@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="lists-describe-the-council" xml:lang="en-GB">
+  <title>The standard lists describe the council, not the service</title>
+  <shortdesc>The local-government list of service types records what a local authority does, which is not how a resident looks for help.</shortdesc>
+  <conbody>
+    <p>The local-government list of service types was written to describe what a local authority
+      does. Many of its entries take the form “provision of information about X”. That is
+      how a council sees its role.</p>
+    <p>A resident sees it differently. A yoga class is a yoga class, not “provision of
+      information about yoga”.</p>
+    <example>
+      <title>A North Lincolnshire example</title>
+      <p>A specialist teaching team for children with physical disabilities carried the labels
+        “Health and wellbeing strategy” and “Sports and physical activity”. Neither
+        would help a parent find it.</p>
+    </example>
+  </conbody>
+</concept>

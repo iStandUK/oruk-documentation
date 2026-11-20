@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="900" height="520" role="img" font-family="Arial, Helvetica, sans-serif">
+  <title>Two separate jobs: building the classification, then applying it every night</title>
+  <desc>Top row: an occasional job in which listings are gathered, restated by an AI reader, grouped on a map of meaning, given draft names and then reviewed and frozen by people into a published classification. Bottom row: a nightly automatic job in which new and changed listings are restated, shortlisted against the categories, judged with evidence and added to the search index. Listings that fit nowhere are logged and fed back to the people who maintain the classification.</desc>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#5F5E5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+  </defs>
+  <rect width="900" height="520" fill="#ffffff"/>
+
+  <text x="24" y="34" font-size="16" font-weight="bold" fill="#002255">Job 1: build the classification</text>
+  <text x="24" y="54" font-size="13" fill="#5F5E5A">Done occasionally. The computer proposes; people decide.</text>
+
+  <g font-size="13">
+    <g fill="#E6EBF4" stroke="#003888" stroke-width="1">
+      <rect x="24" y="72" width="150" height="84" rx="8"/>
+      <rect x="199" y="72" width="150" height="84" rx="8"/>
+      <rect x="374" y="72" width="150" height="84" rx="8"/>
+      <rect x="549" y="72" width="150" height="84" rx="8"/>
+    </g>
+    <rect x="724" y="72" width="152" height="84" rx="8" fill="#F5EBF4" stroke="#A44299" stroke-width="1.5"/>
+
+    <g fill="#002255" text-anchor="middle">
+      <text x="99" y="98" font-weight="bold">1. Gather</text>
+      <text x="99" y="118">Collect the listings,</text>
+      <text x="99" y="136">tidy, de-duplicate</text>
+
+      <text x="274" y="98" font-weight="bold">2. Restate</text>
+      <text x="274" y="118">AI reader pulls out</text>
+      <text x="274" y="136">each dimension</text>
+
+      <text x="449" y="98" font-weight="bold">3. Group</text>
+      <text x="449" y="118">Map by meaning,</text>
+      <text x="449" y="136">find the clusters</text>
+
+      <text x="624" y="98" font-weight="bold">4. Draft</text>
+      <text x="624" y="118">AI drafts names</text>
+      <text x="624" y="136">and definitions</text>
+    </g>
+    <g fill="#4A1E45" text-anchor="middle">
+      <text x="800" y="98" font-weight="bold">5. People decide</text>
+      <text x="800" y="118">Review, merge, split,</text>
+      <text x="800" y="136">then freeze</text>
+    </g>
+  </g>
+  <g stroke="#003888" stroke-width="1.5" fill="none">
+    <line x1="176" y1="114" x2="196" y2="114" marker-end="url(#a)"/>
+    <line x1="351" y1="114" x2="371" y2="114" marker-end="url(#a)"/>
+    <line x1="526" y1="114" x2="546" y2="114" marker-end="url(#a)"/>
+    <line x1="701" y1="114" x2="721" y2="114" marker-end="url(#a)"/>
+  </g>
+
+  <line x1="800" y1="158" x2="800" y2="206" stroke="#A44299" stroke-width="1.5" marker-end="url(#a)"/>
+  <rect x="300" y="210" width="576" height="60" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1.5"/>
+  <text x="588" y="235" text-anchor="middle" font-size="15" font-weight="bold" fill="#2C2C2A">Published classification, version 1.0</text>
+  <text x="588" y="256" text-anchor="middle" font-size="13" fill="#5F5E5A">Fixed categories with definitions; changes only by a new version</text>
+
+  <text x="24" y="322" font-size="16" font-weight="bold" fill="#24480F">Job 2: apply it</text>
+  <text x="24" y="342" font-size="13" fill="#5F5E5A">Every night, automatically, for new and changed listings only.</text>
+
+  <line x1="449" y1="272" x2="449" y2="356" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#a)"/>
+
+  <g font-size="13">
+    <g fill="#EEF6E8" stroke="#3F7A1A" stroke-width="1">
+      <rect x="24" y="360" width="150" height="84" rx="8"/>
+      <rect x="199" y="360" width="150" height="84" rx="8"/>
+      <rect x="374" y="360" width="150" height="84" rx="8"/>
+      <rect x="549" y="360" width="150" height="84" rx="8"/>
+      <rect x="724" y="360" width="152" height="84" rx="8"/>
+    </g>
+    <g fill="#24480F" text-anchor="middle">
+      <text x="99" y="386" font-weight="bold">Gather</text>
+      <text x="99" y="406">Pick up what has</text>
+      <text x="99" y="424">changed today</text>
+
+      <text x="274" y="386" font-weight="bold">Restate</text>
+      <text x="274" y="406">Same AI reader,</text>
+      <text x="274" y="424">same instructions</text>
+
+      <text x="449" y="386" font-weight="bold">Shortlist</text>
+      <text x="449" y="406">Ten nearest</text>
+      <text x="449" y="424">categories by meaning</text>
+
+      <text x="624" y="386" font-weight="bold">Judge</text>
+      <text x="624" y="406">AI picks one, quoting</text>
+      <text x="624" y="424">its evidence</text>
+
+      <text x="800" y="386" font-weight="bold">Search index</text>
+      <text x="800" y="406">Ready for people</text>
+      <text x="800" y="424">and software to query</text>
+    </g>
+  </g>
+  <g stroke="#3F7A1A" stroke-width="1.5" fill="none">
+    <line x1="176" y1="402" x2="196" y2="402" marker-end="url(#a)"/>
+    <line x1="351" y1="402" x2="371" y2="402" marker-end="url(#a)"/>
+    <line x1="526" y1="402" x2="546" y2="402" marker-end="url(#a)"/>
+    <line x1="701" y1="402" x2="721" y2="402" marker-end="url(#a)"/>
+  </g>
+
+  <path d="M624 446 L624 486 L12 486 L12 240 L296 240" fill="none" stroke="#B8400F" stroke-width="1.5" stroke-dasharray="6 5" marker-end="url(#a)"/>
+  <text x="318" y="506" text-anchor="middle" font-size="13" fill="#712B13">Listings that fit no category are logged as suggestions for the next version</text>
+</svg>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="language-model" xml:lang="en-GB">
+  <title>A language model: a tireless reader</title>
+  <shortdesc>A large language model reads one listing at a time and fills in a fixed form about it, quoting its evidence.</shortdesc>
+  <conbody>
+    <p>A <term keyref="gloss-llm">large language model</term> is software that has been trained
+      on a very large amount of text. It can read a passage and answer questions about it in a
+      structured way.</p>
+    <p>Here it acts as a patient clerk. It is given one listing at a time and a fixed form to
+      fill in: what is offered, who it says it is for, any restrictions, and who provides it.</p>
+    <p>Two rules keep the clerk honest.</p>
+    <ul>
+      <li>It must restate what the listing says and not summarise it. Summaries smooth away
+        detail, such as “supports wellbeing”.</li>
+      <li>Every answer taken from the text must come with the exact words quoted from the
+        listing. An answer with no quotation is not accepted.</li>
+    </ul>
+    <p>The model runs on a single powerful desktop computer belonging to the project. Listings
+      are not sent to an outside service for this bulk reading.</p>
+  </conbody>
+</concept>

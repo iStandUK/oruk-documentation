@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="untidy-text" xml:lang="en-GB">
+  <title>The text is untidy</title>
+  <shortdesc>Real services are mixed with records that are not services, with bundled and duplicated entries, and with placeholder values.</shortdesc>
+  <conbody>
+    <p>The listings include:</p>
+    <ul>
+      <li>pages about organisations, village halls and parish councils</li>
+      <li>one-off events</li>
+      <li>around 170 Neighbourhood Watch schemes in one directory</li>
+      <li>entries that bundle several services into one</li>
+      <li>the same service appearing in two directories</li>
+      <li>placeholder values, such as an age limit of “-1”</li>
+    </ul>
+  </conbody>
+</concept>

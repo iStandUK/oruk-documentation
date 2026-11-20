@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="labels-disagree" xml:lang="en-GB">
+  <title>The labels do not agree</title>
+  <shortdesc>Each directory uses a different set of categories, or none, so a category in one cannot be matched to a category in another.</shortdesc>
+  <conbody>
+    <p>Of the eight directories:</p>
+    <ul>
+      <li>three use lists maintained for local government</li>
+      <li>one uses a scheme of its own</li>
+      <li>two use older schemes of their own</li>
+      <li>two carry no categories at all</li>
+    </ul>
+    <p>There is no dependable way to say that a category in one directory means the same as a
+      category in another.</p>
+  </conbody>
+</concept>

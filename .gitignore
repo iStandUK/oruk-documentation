@@ -1,0 +1,5 @@
+# Build output (website, print document and PDF)
+out/
+# DITA-OT temporary files
+temp/
+*.log

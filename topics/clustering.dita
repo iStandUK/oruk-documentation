@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="clustering" xml:lang="en-GB">
+  <title>Clustering: finding the towns on the map</title>
+  <shortdesc>Clustering looks for the places where listings crowd together; each crowded area is a candidate category.</shortdesc>
+  <conbody>
+    <p>Once every listing has a position, a <term keyref="gloss-clustering">clustering</term>
+      method looks for the places where listings crowd together. It is much like picking out
+      towns on a night-time satellite photograph by their lights.</p>
+    <p>Each crowded area is a candidate category.</p>
+    <p>Listings out on their own are set aside as fitting nowhere. They are not forced into the
+      nearest group. They are useful: they show where the picture has gaps and which records
+      need a person to look at them.</p>
+    <p>The project uses two standard methods together, known as UMAP and HDBSCAN. The first
+      simplifies the map so the crowds are easier to see. The second finds them.</p>
+  </conbody>
+</concept>

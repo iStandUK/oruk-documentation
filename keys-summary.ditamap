@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map id="oruk-documentation-keys-summary" xml:lang="en-GB">
+  <title>Glossary keys for the executive summary</title>
+  <!-- Only the terms the summary's topics use, so its glossary carries no technology terms. -->
+  <keydef keys="gloss-oruk" href="glossary/gloss-oruk.dita" format="dita" scope="local" processing-role="resource-only"/>
+  <keydef keys="gloss-dimension" href="glossary/gloss-dimension.dita" format="dita" scope="local" processing-role="resource-only"/>
+  <keydef keys="gloss-lens" href="glossary/gloss-lens.dita" format="dita" scope="local" processing-role="resource-only"/>
+</map>

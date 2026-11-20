@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="dimension-list" xml:lang="en-GB">
+  <title>The dimensions</title>
+  <shortdesc>The seven dimensions on which every listing is described, and the question each one answers.</shortdesc>
+  <refbody>
+    <table frame="all" rowsep="1" colsep="1">
+      <title>Dimensions and the questions they answer</title>
+      <tgroup cols="2">
+        <colspec colname="c1" colwidth="1*"/><colspec colname="c2" colwidth="2*"/>
+        <thead>
+          <row><entry>Dimension</entry><entry>The question it answers</entry></row>
+        </thead>
+        <tbody>
+          <row><entry>Kind of record</entry><entry>Is this a service at all, or an organisation page, a venue or an event?</entry></row>
+          <row><entry>What it is</entry><entry>What happens, or what is offered?</entry></row>
+          <row><entry>What it helps with</entry><entry>What need or outcome is it for?</entry></row>
+          <row><entry>Who it is for</entry><entry>Who is it for, and how strictly?</entry></row>
+          <row><entry>Who runs it</entry><entry>A council, the NHS, a charity, a business or a community group?</entry></row>
+          <row><entry>How it is delivered</entry><entry>In person, by phone or online; in a group or one-to-one; free or charged?</entry></row>
+          <row><entry>How you get in</entry><entry>Drop in, book, self-refer, or be referred by a professional?</entry></row>
+        </tbody>
+      </tgroup>
+    </table>
+  </refbody>
+</reference>

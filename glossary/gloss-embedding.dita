@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="gloss-embedding" xml:lang="en-GB">
+  <glossterm>embedding</glossterm>
+  <glossdef>A position on a map of meaning, calculated for a piece of text so that similar texts land close together.</glossdef>
+</glossentry>

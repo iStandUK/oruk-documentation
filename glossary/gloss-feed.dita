@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="gloss-feed" xml:lang="en-GB">
+  <glossterm>feed</glossterm>
+  <glossdef>One directory's published data.</glossdef>
+</glossentry>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="the-problem" xml:lang="en-GB">
+  <title>The problem</title>
+  <shortdesc>About 18,900 listings from eight directories were examined, and four difficulties stood in the way of finding services across them.</shortdesc>
+  <conbody>
+    <p>The work starts from about 18,900 listings in the eight directories that could be reached
+      in November 2026:</p>
+    <ul>
+      <li>Bristol</li>
+      <li>Shropshire</li>
+      <li>North Lincolnshire</li>
+      <li>Dorset</li>
+      <li>Buckinghamshire</li>
+      <li>Southampton</li>
+      <li>the Care Quality Commission's register</li>
+      <li>Open Sessions, a national feed of sport and activity sessions</li>
+    </ul>
+    <p>Looking closely at them showed four difficulties. Together they led to one conclusion:
+      services need to be classified by what their descriptions mean, and the categories should
+      come from the services that really exist.</p>
+  </conbody>
+</concept>

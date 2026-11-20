@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="gloss-dimension" xml:lang="en-GB">
+  <glossterm>dimension</glossterm>
+  <glossdef>One independent aspect of a service, such as what it is or who it is for. Also called a facet.</glossdef>
+</glossentry>

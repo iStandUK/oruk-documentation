@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="searching" xml:lang="en-GB">
+  <title>Searching by meaning</title>
+  <shortdesc>A person's question is given a position on the map of meaning and the nearest listings are returned.</shortdesc>
+  <conbody>
+    <p>Search uses the same map as the classification. This finds services whose wording is nothing like the question.</p>
+    <p>Closeness of meaning is not enough by itself, so the design adds several ordinary
+      safeguards.</p>
+  </conbody>
+</concept>

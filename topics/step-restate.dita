@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="step-restate" xml:lang="en-GB">
+  <title>Step 2: restate each listing</title>
+  <shortdesc>The language model fills in its form for each listing, which is what separates the dimensions.</shortdesc>
+  <conbody>
+    <p>The language model fills in its form for each listing: the kind of record, each distinct
+      thing on offer, who it says it is for, any restrictions, and who provides it.</p>
+    <p>This is the step that separates the dimensions. A listing that bundles several services
+      is split into one entry for each.</p>
+  </conbody>
+</concept>

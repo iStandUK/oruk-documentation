@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="the-technology" xml:lang="en-GB">
+  <title>Four pieces of technology, in plain terms</title>
+  <shortdesc>The work relies on a language model, embeddings, clustering and a vector database; each can be understood in outline without technical knowledge.</shortdesc>
+  <conbody>
+    <p>In outline:</p>
+    <ul>
+      <li>a language model, which reads each listing</li>
+      <li>embeddings, which place each listing on a map of meaning</li>
+      <li>clustering, which finds the groups on that map</li>
+      <li>a vector database, which stores the map so it can be searched quickly</li>
+    </ul>
+  </conbody>
+</concept>

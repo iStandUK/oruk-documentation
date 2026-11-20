@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap id="finding-services-by-meaning" xml:lang="en-GB">
+  <booktitle>
+    <mainbooktitle>Finding local services by what they mean</mainbooktitle>
+    <booktitlealt>A plain-English guide to the Open Referral UK service classification and
+      search work, for readers with no background in artificial intelligence.</booktitlealt>
+  </booktitle>
+  <bookmeta>
+    <author>iStandUK</author>
+    <critdates>
+      <created date="2026-11-19"/>
+    </critdates>
+    <bookid>
+      <edition>Draft, November 2026</edition>
+    </bookid>
+    <bookrights>
+      <copyrfirst><year>2026</year></copyrfirst>
+      <bookowner>
+        <organization>iStandUK</organization>
+      </bookowner>
+    </bookrights>
+  </bookmeta>
+  <frontmatter>
+    <booklists>
+      <toc/>
+      <figurelist/>
+      <tablelist/>
+    </booklists>
+    <mapref href="keys.ditamap" processing-role="resource-only"/>
+  </frontmatter>
+  <chapter href="topics/in-brief.dita"/>
+  <chapter href="topics/the-problem.dita">
+    <topicref href="topics/labels-disagree.dita"/>
+    <topicref href="topics/lists-describe-the-council.dita"/>
+    <topicref href="topics/untidy-text.dita"/>
+    <topicref href="topics/word-matching-fails.dita"/>
+  </chapter>
+  <chapter href="topics/several-dimensions.dita">
+    <topicref href="topics/dimension-list.dita"/>
+    <topicref href="topics/audience-separate-from-type.dita"/>
+    <topicref href="topics/for-and-only-for.dita"/>
+    <topicref href="topics/purpose-links-services.dita"/>
+    <topicref href="topics/browsing-menus.dita"/>
+  </chapter>
+  <chapter href="topics/the-technology.dita">
+    <topicref href="topics/language-model.dita"/>
+    <topicref href="topics/embedding.dita"/>
+    <topicref href="topics/clustering.dita"/>
+    <topicref href="topics/vector-database.dita"/>
+  </chapter>
+  <chapter href="topics/two-jobs.dita">
+    <topicref href="topics/step-gather.dita"/>
+    <topicref href="topics/step-restate.dita"/>
+    <topicref href="topics/step-group.dita"/>
+    <topicref href="topics/step-draft.dita"/>
+    <topicref href="topics/step-decide.dita"/>
+    <topicref href="topics/frozen-versions.dita"/>
+    <topicref href="topics/existing-lists.dita"/>
+  </chapter>
+  <chapter href="topics/applying-nightly.dita">
+    <topicref href="topics/map-proposes-reader-decides.dita"/>
+    <topicref href="topics/label-records.dita"/>
+  </chapter>
+  <chapter href="topics/searching.dita">
+    <topicref href="topics/search-safeguards.dita"/>
+    <topicref href="topics/search-users.dita"/>
+  </chapter>
+  <chapter href="topics/why-trust.dita"/>
+  <chapter href="topics/components.dita">
+    <topicref href="topics/repositories.dita"/>
+    <topicref href="topics/status.dita"/>
+  </chapter>
+</bookmap>

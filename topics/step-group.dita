@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="step-group" xml:lang="en-GB">
+  <title>Step 3: map and group, one dimension at a time</title>
+  <shortdesc>Text about what is offered is grouped separately from text about who it is for, so each dimension gets a clean list.</shortdesc>
+  <conbody>
+    <p>This is the most important design choice.</p>
+    <p>If whole descriptions are placed on the map, the groups that form are a muddle:</p>
+    <ul>
+      <li>some gather around an audience, such as carers, with support groups, respite breaks
+        and information pages all together</li>
+      <li>some gather around a provider, such as a dementia charity's café, choir and
+        helpline</li>
+      <li>some gather around one council's house style</li>
+    </ul>
+    <p>So the text about what is offered is mapped and grouped on its own. The text about who
+      it is for is mapped and grouped separately. Each then yields a clean list for one
+      dimension.</p>
+    <p>Care is taken that no single directory shapes the result. Open Sessions, for example,
+      lists every weekly session separately, so one dance school appears 76 times. Its sessions
+      are first collapsed into one entry for each service, and each directory contributes a
+      balanced share.</p>
+  </conbody>
+</concept>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="in-brief" xml:lang="en-GB">
+  <title>In brief</title>
+  <shortdesc>Local service directories can be shared in a common format but still cannot be searched reliably; this work sets out to fix that.</shortdesc>
+  <conbody>
+    <p>Councils, charities and the NHS publish directories of local help: food banks, debt advice,
+      lunch clubs, exercise classes, carers' groups. <term keyref="gloss-oruk">Open Referral UK</term>
+      (ORUK) is the data standard that lets those directories be shared in one common format.</p>
+    <p>The standard makes the data shareable. It does not make it findable. Each directory labels
+      its services in its own way, or not at all. So a simple question such as “what is there
+      near me for someone who has become unsteady on their feet?” has no reliable answer across
+      directories.</p>
+    <p>The work has three aims:</p>
+    <ol>
+      <li>Work out a common way of describing services, drawn from what the listings themselves
+        say: what each service is, what it helps with, and who it is for.</li>
+      <li>Apply that description to every listing automatically, every night, with a quoted
+        reason for each label.</li>
+      <li>Let people and software search by meaning instead of by exact wording.</li>
+    </ol>
+    <p>Recent artificial intelligence techniques do the reading and sorting. People make the
+      decisions about the categories.</p>
+    <p>The aim is to show councils and software suppliers what can be built on ORUK data, and to
+      give them the reusable parts. It is not to run a national service.</p>
+  </conbody>
+</concept>

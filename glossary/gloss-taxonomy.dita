@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="gloss-taxonomy" xml:lang="en-GB">
+  <glossterm>taxonomy</glossterm>
+  <glossdef>An agreed set of categories with definitions. This guide calls it the classification.</glossdef>
+</glossentry>

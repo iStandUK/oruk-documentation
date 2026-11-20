@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="several-dimensions" xml:lang="en-GB">
+  <title>Several short lists, not one long tree</title>
+  <shortdesc>Each service is described on several independent dimensions, each with its own short list of values, instead of being filed in one place in a single tree.</shortdesc>
+  <conbody>
+    <p>Most directories file each service in one place in a single tree of categories, like a
+      book on a library shelf. That forces awkward choices. Is a health walk for older people
+      filed under sport, health, or older people?</p>
+    <p>A single tree also grows without limit, because every activity can be combined with every
+      audience: yoga, pregnancy yoga, yoga for carers, chair yoga for over-70s.</p>
+    <p>The design instead describes each service on several independent
+      <term keyref="gloss-dimension">dimensions</term>, each with its own short list of values.</p>
+    <fig>
+      <title>One listing described on several independent dimensions</title>
+      <image href="../images/dimensions.svg" placement="break" scalefit="yes">
+        <alt>An illustrative directory listing for a weekly strength and balance class, broken into six separate descriptions: what it is, what it helps with, who it is for, who runs it, how it is delivered and how you get in.</alt>
+      </image>
+    </fig>
+    <p>Readers who know clinical coding will recognise the principle from SNOMED CT.</p>
+  </conbody>
+</concept>

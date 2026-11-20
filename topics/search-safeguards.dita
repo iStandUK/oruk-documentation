@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="search-safeguards" xml:lang="en-GB">
+  <title>Safeguards added to search</title>
+  <shortdesc>Place, keywords, eligibility, an honest “nothing close” and crisis routing are applied alongside closeness of meaning.</shortdesc>
+  <conbody>
+    <dl>
+      <dlentry>
+        <dt>Place</dt>
+        <dd>A perfect match in Shropshire is no use to someone in Bristol.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Keywords as well</dt>
+        <dd>Very short searches, such as “SEND” or “yoga”, are too vague to place
+          well on the map. Conventional word matching runs alongside, and the two results are
+          blended.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Eligibility filters</dt>
+        <dd>“Can my 15-year-old go?” is answered from the recorded ages and restrictions,
+          not from similarity.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>An honest “nothing close”</dt>
+        <dd>The nearest listing is not shown if it is not near enough.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Crisis routing</dt>
+        <dd>A search that suggests someone is in crisis shows fixed, appropriate routes to help
+          first, and not whichever community group happens to be nearest in wording.</dd>
+      </dlentry>
+    </dl>
+  </conbody>
+</concept>

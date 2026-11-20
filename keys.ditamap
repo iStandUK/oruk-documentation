@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map id="oruk-documentation-keys" xml:lang="en-GB">
+  <title>Glossary keys</title>
+  <keydef keys="gloss-oruk" href="glossary/gloss-oruk.dita" format="dita" scope="local" processing-role="resource-only"/>
+  <keydef keys="gloss-feed" href="glossary/gloss-feed.dita" format="dita" scope="local" processing-role="resource-only"/>
+  <keydef keys="gloss-taxonomy" href="glossary/gloss-taxonomy.dita" format="dita" scope="local" processing-role="resource-only"/>
+  <keydef keys="gloss-dimension" href="glossary/gloss-dimension.dita" format="dita" scope="local" processing-role="resource-only"/>
+  <keydef keys="gloss-llm" href="glossary/gloss-llm.dita" format="dita" scope="local" processing-role="resource-only"/>
+  <keydef keys="gloss-embedding" href="glossary/gloss-embedding.dita" format="dita" scope="local" processing-role="resource-only"/>
+  <keydef keys="gloss-clustering" href="glossary/gloss-clustering.dita" format="dita" scope="local" processing-role="resource-only"/>
+  <keydef keys="gloss-vector-database" href="glossary/gloss-vector-database.dita" format="dita" scope="local" processing-role="resource-only"/>
+  <keydef keys="gloss-lens" href="glossary/gloss-lens.dita" format="dita" scope="local" processing-role="resource-only"/>
+</map>

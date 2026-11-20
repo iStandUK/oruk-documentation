@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="label-records" xml:lang="en-GB">
+  <title>Every label records how it was made</title>
+  <shortdesc>Each label carries the version of the classification, the model and the instructions that produced it.</shortdesc>
+  <conbody>
+    <p>Every label records:</p>
+    <ul>
+      <li>which version of the classification it uses</li>
+      <li>which model produced it</li>
+      <li>which instructions the model was given</li>
+    </ul>
+    <p>Listings that have not changed are not processed again.</p>
+  </conbody>
+</concept>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="for-and-only-for" xml:lang="en-GB">
+  <title>“For” and “only for” are different</title>
+  <shortdesc>Every statement about who a service is for is marked as eligibility, intended audience or exclusion.</shortdesc>
+  <conbody>
+    <p>Every statement about who a service is for is marked as one of three things.</p>
+    <dl>
+      <dlentry>
+        <dt>Eligibility</dt>
+        <dd>Only these people may use it.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Intended audience</dt>
+        <dd>It is aimed at these people, but open to others.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Exclusion</dt>
+        <dd>It is not for these people.</dd>
+      </dlentry>
+    </dl>
+    <p>Confusing the first two is the commonest fault in directories. It either hides services
+      from people who could use them, or sends people to services that will turn them away.</p>
+  </conbody>
+</concept>

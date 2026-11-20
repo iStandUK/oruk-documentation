@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="purpose-links-services" xml:lang="en-GB">
+  <title>What a service helps with joins up unrelated services</title>
+  <shortdesc>Recording the need a service meets lets very different kinds of service be found together.</shortdesc>
+  <conbody>
+    <p>A strength-and-balance class at a leisure centre and an NHS falls-prevention service are
+      different kinds of thing. Both help someone stay steady on their feet.</p>
+    <p>A social prescriber searches by the need, and should find both. Recording
+      “what it helps with” as its own dimension makes that possible.</p>
+  </conbody>
+</concept>

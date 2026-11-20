@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="gloss-oruk" xml:lang="en-GB">
+  <glossterm>Open Referral UK</glossterm>
+  <glossdef>The data standard for publishing directories of local services in a common format.</glossdef>
+  <glossBody><glossAlt><glossAcronym>ORUK</glossAcronym></glossAlt></glossBody>
+</glossentry>

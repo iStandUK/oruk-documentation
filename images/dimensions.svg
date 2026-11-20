@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 430" width="900" height="430" role="img" font-family="Arial, Helvetica, sans-serif">
+  <title>One listing described on several independent dimensions</title>
+  <desc>A directory listing for a strength and balance class on the left is broken into six separate descriptions on the right: what it is, what it helps with, who it is for, who runs it, how it is delivered and how you get in.</desc>
+  <rect width="900" height="430" fill="#ffffff"/>
+
+  <rect x="24" y="96" width="280" height="238" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+  <text x="44" y="126" font-size="13" fill="#5F5E5A">A directory listing (illustrative)</text>
+  <text x="44" y="154" font-size="17" font-weight="bold" fill="#2C2C2A">Steady Steps</text>
+  <text font-size="14" fill="#2C2C2A">
+    <tspan x="44" y="184">"Friendly weekly strength and</tspan>
+    <tspan x="44" y="204">balance class at the village hall,</tspan>
+    <tspan x="44" y="224">run by our volunteers. Ideal for</tspan>
+    <tspan x="44" y="244">over-60s who want to stay steady</tspan>
+    <tspan x="44" y="264">on their feet, but everyone is</tspan>
+    <tspan x="44" y="284">welcome. Just turn up. Tea and</tspan>
+    <tspan x="44" y="304">a chat afterwards."</tspan>
+  </text>
+
+  <g stroke="#888780" stroke-width="1" fill="none">
+    <path d="M304 215 C350 215 350 51 396 51"/>
+    <path d="M304 215 C350 215 350 117 396 117"/>
+    <path d="M304 215 C350 215 350 183 396 183"/>
+    <path d="M304 215 C350 215 350 249 396 249"/>
+    <path d="M304 215 C350 215 350 315 396 315"/>
+    <path d="M304 215 C350 215 350 381 396 381"/>
+  </g>
+
+  <g font-size="13">
+    <rect x="396" y="24" width="480" height="54" rx="8" fill="#E6EBF4" stroke="#003888" stroke-width="1"/>
+    <text x="414" y="46" fill="#003888">What it is</text>
+    <text x="414" y="66" font-size="15" font-weight="bold" fill="#002255">Strength and balance exercise class</text>
+
+    <rect x="396" y="90" width="480" height="54" rx="8" fill="#EEF6E8" stroke="#3F7A1A" stroke-width="1"/>
+    <text x="414" y="112" fill="#3F7A1A">What it helps with</text>
+    <text x="414" y="132" font-size="15" font-weight="bold" fill="#24480F">Staying steady on your feet; meeting people</text>
+
+    <rect x="396" y="156" width="480" height="54" rx="8" fill="#FDEEE8" stroke="#B8400F" stroke-width="1"/>
+    <text x="414" y="178" fill="#B8400F">Who it's for</text>
+    <text x="414" y="198" font-size="15" font-weight="bold" fill="#4A1B0C">Aimed at over-60s, open to anyone</text>
+
+    <rect x="396" y="222" width="480" height="54" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+    <text x="414" y="244" fill="#5F5E5A">Who runs it</text>
+    <text x="414" y="264" font-size="15" font-weight="bold" fill="#2C2C2A">Volunteer-run community group</text>
+
+    <rect x="396" y="288" width="480" height="54" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+    <text x="414" y="310" fill="#5F5E5A">How it's delivered</text>
+    <text x="414" y="330" font-size="15" font-weight="bold" fill="#2C2C2A">In person, in a group, every week</text>
+
+    <rect x="396" y="354" width="480" height="54" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+    <text x="414" y="376" fill="#5F5E5A">How you get in</text>
+    <text x="414" y="396" font-size="15" font-weight="bold" fill="#2C2C2A">Drop in, no referral or booking</text>
+  </g>
+</svg>

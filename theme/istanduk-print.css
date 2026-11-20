@@ -1,0 +1,51 @@
+/*
+ * iStandUK publisher stylesheet for the print document and PDF.
+ *
+ * Passed to the build as args.css (see build.ps1 / build.sh). The website
+ * already takes its iStandUK look from govuk.branding=istanduk; these rules
+ * carry the same identity to the print document, which that mode leaves plain.
+ * Every rule is scoped to .app-print so the website pages are unchanged.
+ *
+ * Palette (iNetwork / iStandUK brand reference):
+ *   brand blue  #003888 (Pantone 072)   brand green #5BAC26 (Pantone 361)
+ * The logo is the outlined artwork shipped with the plugin
+ * (org.istanduk.gov-uk/resource/brand/istanduk), copied to theme/assets/brand.
+ */
+
+/* Cover: logo top-left at the guideline's A4 width (75 mm), above a blue rule */
+.app-print .app-print-cover::before {
+  content: "";
+  display: block;
+  width: 75mm;
+  height: 16.65mm;
+  margin: 0 0 14mm 0;
+  background-image: url("brand/istanduk-logo.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 75mm 16.65mm;
+}
+
+.app-print .app-print-cover .govuk-heading-xl {
+  border-top: 2pt solid #003888;
+  padding-top: 10mm;
+}
+
+/* Headings in brand blue */
+.app-print .govuk-heading-xl,
+.app-print .govuk-heading-l,
+.app-print .govuk-heading-m,
+.app-print .govuk-heading-s,
+.app-print #main-content .sectiontitle {
+  color: #003888;
+}
+
+/* Links and table headers */
+.app-print #main-content a,
+.app-print .app-print-contents a {
+  color: #003888;
+}
+
+.app-print .govuk-table__header {
+  color: #003888;
+  border-bottom: 1.5pt solid #003888;
+}

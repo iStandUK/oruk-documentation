@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="why-trust" xml:lang="en-GB">
+  <title>Why this can be trusted</title>
+  <shortdesc>People set the categories, every label has a quoted reason, personal details are removed, and quality is judged by whether people can find what they need.</shortdesc>
+  <conbody>
+    <dl>
+      <dlentry>
+        <dt>People set the categories</dt>
+        <dd>The computer proposes groups. People decide what becomes a category and why, and
+          each category records the user need that justifies it.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Every label has a quoted reason</dt>
+        <dd>No claim about who may use a service is accepted without the words from the listing
+          that support it.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Personal details are removed first</dt>
+        <dd>This happens before any AI model sees the text.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Bulk processing stays on the project's own computer</dt>
+        <dd>Listings are not sent to an outside service to be read in bulk.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Results are versioned and repeatable</dt>
+        <dd>It is always possible to say which version of the classification and which model
+          produced a label.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Quality is judged by whether people can find what they need</dt>
+        <dd>A catalogue of real needs is the test, for example “as a carer of someone with
+          dementia, I need a few hours' break during the day”. The bar is highest for
+          safety-critical needs and lower for leisure.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Accuracy is measured on a hand-checked sample</dt>
+        <dd>The sample is labelled independently of the model that named the categories.</dd>
+      </dlentry>
+    </dl>
+  </conbody>
+</concept>

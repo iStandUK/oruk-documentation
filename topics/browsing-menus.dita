@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="browsing-menus" xml:lang="en-GB">
+  <title>Browsing menus are generated</title>
+  <shortdesc>A familiar menu of categories is still offered, generated from the dimensions, and people choose which menu suits them.</shortdesc>
+  <conbody>
+    <p>A familiar menu of categories is still available. It is generated from the dimensions,
+      so nothing has to be filed twice. Each such menu is called a
+      <term keyref="gloss-lens">lens</term>.</p>
+    <p>Two lenses are planned:</p>
+    <ul>
+      <li><b>What is on offer</b>, for people who know what they want, such as “a yoga
+        class” or “a food bank”</li>
+      <li><b>What it helps with</b>, for people starting from a problem, such as “help with
+        money worries”</li>
+    </ul>
+    <p>A person can switch between them without losing the place, age or cost they have already
+      chosen.</p>
+  </conbody>
+</concept>

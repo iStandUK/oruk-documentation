@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="gloss-llm" xml:lang="en-GB">
+  <glossterm>large language model</glossterm>
+  <glossdef>Software trained on a very large amount of text, which can read a passage and answer structured questions about it.</glossdef>
+  <glossBody><glossAlt><glossAcronym>LLM</glossAcronym></glossAlt></glossBody>
+</glossentry>

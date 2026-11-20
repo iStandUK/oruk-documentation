@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="map-proposes-reader-decides" xml:lang="en-GB">
+  <title>The map proposes, the reader decides</title>
+  <shortdesc>The map of meaning is used to propose categories; individual listings are labelled by a reader applying written definitions.</shortdesc>
+  <conbody>
+    <p>The design uses the map and the reader for different purposes.</p>
+    <p>The map is good at revealing the overall shape of what exists. That is why it is used to
+      propose categories.</p>
+    <p>On its own the map is too blunt to decide individual cases, where a service near a
+      boundary could fall either way. So each individual decision is made by a reader applying
+      written definitions. The decision can be checked afterwards, because the reason is
+      recorded.</p>
+  </conbody>
+</concept>

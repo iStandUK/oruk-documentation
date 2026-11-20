@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="step-decide" xml:lang="en-GB">
+  <title>Step 5: people decide</title>
+  <shortdesc>People decide which proposed groups become categories, and the test is what users need to tell apart.</shortdesc>
+  <conbody>
+    <p>The computer's groups are only proposals. People decide which become categories. The
+      test is what users need to tell apart, never how many listings a group contains.</p>
+    <ul>
+      <li>Does the distinction change what someone would do? A food bank and a community meal
+        differ in access and timing, so they stay separate. Ballet and tap for adults probably
+        do not need separate categories.</li>
+      <li>Do people ask for it in their own words?</li>
+      <li>Is it safety-critical? Crisis, safeguarding and domestic-abuse services are always
+        kept distinct, however few there are.</li>
+      <li>Would a professional refer differently?</li>
+    </ul>
+    <p>A need that no current service meets still gets a category, left empty, so that gaps in
+      provision are visible.</p>
+  </conbody>
+</concept>

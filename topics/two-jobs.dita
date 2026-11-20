@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="two-jobs" xml:lang="en-GB">
+  <title>Two separate jobs</title>
+  <shortdesc>Building the classification is an occasional job that ends with a human decision; applying it is a routine job that runs every night.</shortdesc>
+  <conbody>
+    <p>There are two separate jobs, and keeping them apart is central to the design.</p>
+    <fig>
+      <title>Building the classification, then applying it every night</title>
+      <image href="../images/two-jobs.svg" placement="break" scalefit="yes">
+        <alt>Job 1, done occasionally: gather the listings, restate them with an AI reader, group them by meaning, draft names and definitions, then people review and freeze a published classification. Job 2, every night: gather what has changed, restate, shortlist the ten nearest categories, judge with quoted evidence, and add to the search index. Listings that fit no category are logged as suggestions for the next version.</alt>
+      </image>
+    </fig>
+    <p>The first job has five steps. The computer proposes; people decide.</p>
+    <p>The second job uses the published classification and changes nothing in it.</p>
+  </conbody>
+</concept>

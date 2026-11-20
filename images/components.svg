@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" width="900" height="380" role="img" font-family="Arial, Helvetica, sans-serif">
+  <title>The components and what passes between them</title>
+  <desc>Directories feed a gather-and-clean component. Its output goes to a component that builds the classification occasionally and to a component that labels every listing nightly. The classification and the labels go to a search component, which serves AI assistants, professionals and the public.</desc>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#5F5E5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+  </defs>
+  <rect width="900" height="380" fill="#ffffff"/>
+
+  <rect x="24" y="150" width="170" height="80" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+  <text x="109" y="182" text-anchor="middle" font-size="15" font-weight="bold" fill="#2C2C2A">Local directories</text>
+  <text x="109" y="204" text-anchor="middle" font-size="13" fill="#5F5E5A">Eight ORUK feeds</text>
+
+  <rect x="244" y="150" width="170" height="80" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+  <text x="329" y="182" text-anchor="middle" font-size="15" font-weight="bold" fill="#2C2C2A">Gather and clean</text>
+  <text x="329" y="204" text-anchor="middle" font-size="13" fill="#5F5E5A">oruk-harvest</text>
+
+  <rect x="464" y="30" width="190" height="80" rx="8" fill="#E6EBF4" stroke="#003888" stroke-width="1"/>
+  <text x="559" y="60" text-anchor="middle" font-size="15" font-weight="bold" fill="#002255">Build the classification</text>
+  <text x="559" y="80" text-anchor="middle" font-size="13" fill="#003888">oruk-service-taxonomy</text>
+  <text x="559" y="98" text-anchor="middle" font-size="13" fill="#003888">Occasional; people decide</text>
+
+  <rect x="464" y="150" width="190" height="80" rx="8" fill="#EEF6E8" stroke="#3F7A1A" stroke-width="1"/>
+  <text x="559" y="180" text-anchor="middle" font-size="15" font-weight="bold" fill="#24480F">Label every listing</text>
+  <text x="559" y="200" text-anchor="middle" font-size="13" fill="#3F7A1A">oruk-enrich</text>
+  <text x="559" y="218" text-anchor="middle" font-size="13" fill="#3F7A1A">Every night; automatic</text>
+
+  <rect x="704" y="150" width="172" height="80" rx="8" fill="#EEF6E8" stroke="#3F7A1A" stroke-width="1"/>
+  <text x="790" y="182" text-anchor="middle" font-size="15" font-weight="bold" fill="#24480F">Search by meaning</text>
+  <text x="790" y="204" text-anchor="middle" font-size="13" fill="#3F7A1A">oruk-semantic-search</text>
+
+  <rect x="704" y="280" width="172" height="76" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+  <text x="790" y="304" text-anchor="middle" font-size="13" fill="#2C2C2A">AI assistants,</text>
+  <text x="790" y="322" text-anchor="middle" font-size="13" fill="#2C2C2A">then professionals,</text>
+  <text x="790" y="340" text-anchor="middle" font-size="13" fill="#2C2C2A">then the public</text>
+
+  <g stroke="#5F5E5A" stroke-width="1.5" fill="none">
+    <line x1="196" y1="190" x2="240" y2="190" marker-end="url(#a)"/>
+    <line x1="416" y1="190" x2="460" y2="190" marker-end="url(#a)"/>
+    <path d="M439 190 L439 70 L460 70" marker-end="url(#a)"/>
+    <line x1="559" y1="112" x2="559" y2="146" marker-end="url(#a)"/>
+    <line x1="656" y1="190" x2="700" y2="190" marker-end="url(#a)"/>
+    <path d="M656 70 L790 70 L790 146" marker-end="url(#a)"/>
+    <line x1="790" y1="232" x2="790" y2="276" marker-end="url(#a)"/>
+  </g>
+
+  <text x="329" y="252" text-anchor="middle" font-size="13" fill="#5F5E5A">One common record</text>
+  <text x="329" y="270" text-anchor="middle" font-size="13" fill="#5F5E5A">for every listing</text>
+  <text x="559" y="252" text-anchor="middle" font-size="13" fill="#5F5E5A">Labels, each with</text>
+  <text x="559" y="270" text-anchor="middle" font-size="13" fill="#5F5E5A">quoted evidence</text>
+  <text x="724" y="52" text-anchor="middle" font-size="13" fill="#5F5E5A">Numbered releases</text>
+</svg>

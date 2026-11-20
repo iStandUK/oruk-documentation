@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="vector-database" xml:lang="en-GB">
+  <title>A vector database: the index</title>
+  <shortdesc>A vector database stores the map positions so that the nearest listings to any new position can be found in a fraction of a second.</shortdesc>
+  <conbody>
+    <p>A <term keyref="gloss-vector-database">vector database</term> is to meaning what a
+      book's index is to words.</p>
+    <p>At this scale it is one modest file.</p>
+  </conbody>
+</concept>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<!-- Executive summary: reuses topics from the full guide (finding-services-by-meaning.ditamap).
+     It covers the aim, the problem and the way services are described. It leaves out the
+     technology, the build and nightly processes, search, the repositories and current status. -->
+<bookmap id="finding-services-by-meaning-summary" xml:lang="en-GB">
+  <booktitle>
+    <mainbooktitle>Finding local services by what they mean: executive summary</mainbooktitle>
+    <booktitlealt>Why local service directories are hard to search, and how describing each
+      service on several simple dimensions makes them findable.</booktitlealt>
+  </booktitle>
+  <bookmeta>
+    <author>iStandUK</author>
+    <critdates>
+      <created date="2026-11-19"/>
+    </critdates>
+    <bookid>
+      <edition>Draft, November 2026</edition>
+    </bookid>
+    <bookrights>
+      <copyrfirst><year>2026</year></copyrfirst>
+      <bookowner>
+        <organization>iStandUK</organization>
+      </bookowner>
+    </bookrights>
+  </bookmeta>
+  <frontmatter>
+    <booklists>
+      <toc/>
+    </booklists>
+    <mapref href="keys-summary.ditamap" processing-role="resource-only"/>
+  </frontmatter>
+  <chapter href="topics/in-brief.dita"/>
+  <chapter href="topics/the-problem.dita">
+    <topicref href="topics/labels-disagree.dita"/>
+    <topicref href="topics/lists-describe-the-council.dita"/>
+    <topicref href="topics/untidy-text.dita"/>
+    <topicref href="topics/word-matching-fails.dita"/>
+  </chapter>
+  <chapter href="topics/several-dimensions.dita">
+    <topicref href="topics/dimension-list.dita"/>
+    <topicref href="topics/audience-separate-from-type.dita"/>
+    <topicref href="topics/for-and-only-for.dita"/>
+    <topicref href="topics/purpose-links-services.dita"/>
+    <topicref href="topics/browsing-menus.dita"/>
+  </chapter>
+</bookmap>

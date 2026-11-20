@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="step-gather" xml:lang="en-GB">
+  <title>Step 1: gather and clean</title>
+  <shortdesc>A harvesting program collects the listings from every directory, tidies them and removes personal details.</shortdesc>
+  <conbody>
+    <p>A harvesting program collects the listings from every directory and converts them into
+      one common shape. As it does so, it:</p>
+    <ul>
+      <li>strips out web formatting and repeated boilerplate</li>
+      <li>removes personal contact details, such as a named person's phone number or email
+        address, so that these never reach an AI model</li>
+      <li>spots the same service appearing in more than one directory, and links the copies
+        together</li>
+    </ul>
+  </conbody>
+</concept>

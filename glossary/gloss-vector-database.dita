@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="gloss-vector-database" xml:lang="en-GB">
+  <glossterm>vector database</glossterm>
+  <glossdef>A store of map positions that can quickly find the ones nearest to a given position.</glossdef>
+</glossentry>

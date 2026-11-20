@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="search-users" xml:lang="en-GB">
+  <title>Who will use search, and in what order</title>
+  <shortdesc>AI assistants come first, then professionals, then the public.</shortdesc>
+  <conbody>
+    <ol>
+      <li><b>AI assistants</b>, which can call the search directly.</li>
+      <li><b>Professionals</b>, such as social prescribers.</li>
+      <li><b>The public.</b></li>
+    </ol>
+    <p>A public service needs further work on privacy and safeguarding first. What people type
+      into such a search reveals a great deal about them.</p>
+  </conbody>
+</concept>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="step-draft" xml:lang="en-GB">
+  <title>Step 4: draft names and definitions</title>
+  <shortdesc>An AI model drafts a name, a definition and the boundaries for each group by comparing it with its neighbours.</shortdesc>
+  <conbody>
+    <p>For each group, an AI model is shown typical members, borderline members and the
+      neighbouring groups. It drafts:</p>
+    <ul>
+      <li>a name</li>
+      <li>a one-sentence definition</li>
+      <li>a list of what the category includes</li>
+      <li>a list of what it excludes, with a pointer to where those things belong instead</li>
+    </ul>
+    <p>Comparing each group with its neighbours is what produces useful boundaries.</p>
+    <p>The model used for this step is Claude. It is used only for this step and for testing,
+      and only on cleaned text.</p>
+  </conbody>
+</concept>

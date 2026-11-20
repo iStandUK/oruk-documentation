@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="repositories" xml:lang="en-GB">
+  <title>The repositories</title>
+  <shortdesc>The repositories that make up the work, and what each one produces.</shortdesc>
+  <refbody>
+    <table frame="all" rowsep="1" colsep="1">
+      <title>Repositories and what they produce</title>
+      <tgroup cols="3">
+        <colspec colname="c1" colwidth="2*"/><colspec colname="c2" colwidth="3*"/><colspec colname="c3" colwidth="3*"/>
+        <thead>
+          <row><entry>Repository</entry><entry>What it does</entry><entry>What it produces</entry></row>
+        </thead>
+        <tbody>
+          <row><entry><filepath>oruk-harvest</filepath></entry><entry>Gathers the directories, cleans the text, removes personal details and links duplicates</entry><entry>A common record for every listing, and a list of what changed</entry></row>
+          <row><entry><filepath>oruk-service-taxonomy</filepath></entry><entry>Finds groups, and holds the curated classification</entry><entry>Numbered releases of the classification</entry></row>
+          <row><entry><filepath>oruk-enrich</filepath></entry><entry>Restates each listing and assigns it to categories</entry><entry>Labels for each listing, with evidence</entry></row>
+          <row><entry><filepath>oruk-semantic-search</filepath></entry><entry>Builds the search index and answers searches</entry><entry>A search service for people and for AI assistants</entry></row>
+          <row><entry><filepath>oruk-dotnet</filepath></entry><entry>Shared program libraries for reading ORUK data</entry><entry>Software packages used by the other components</entry></row>
+          <row><entry><filepath>ORUK-AlternativeRepresentations</filepath></entry><entry>Earlier experiments, including live look-up of single directories</entry><entry>Working tools that the newer components draw on</entry></row>
+        </tbody>
+      </tgroup>
+    </table>
+  </refbody>
+</reference>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="frozen-versions" xml:lang="en-GB">
+  <title>The classification is published and frozen</title>
+  <shortdesc>The result is published as a numbered version and is never regenerated automatically.</shortdesc>
+  <conbody>
+    <p>Later runs can only suggest changes. Changes are released deliberately as a new
+      version.</p>
+    <p>Councils and suppliers will store these categories in their own systems. They cannot
+      build on labels that shift from week to week.</p>
+  </conbody>
+</concept>

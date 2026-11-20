@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="900" height="500" role="img" font-family="Arial, Helvetica, sans-serif">
+  <title>A map of meaning: similar services sit close together</title>
+  <desc>Dots representing service listings are placed so that listings with similar meanings are near each other. Four groups emerge: gentle exercise, help with food, money advice and company. Two listings fit no group. A search question lands beside the gentle exercise group.</desc>
+  <rect width="900" height="500" fill="#ffffff"/>
+  <rect x="20" y="20" width="860" height="424" rx="8" fill="#FAFAF7" stroke="#D3D1C7" stroke-width="1"/>
+
+  <g fill="none" stroke-width="1.5" stroke-dasharray="6 5">
+    <ellipse cx="225" cy="150" rx="165" ry="95" stroke="#003888"/>
+    <ellipse cx="675" cy="130" rx="150" ry="85" stroke="#3F7A1A"/>
+    <ellipse cx="225" cy="340" rx="165" ry="68" stroke="#B8400F"/>
+    <ellipse cx="655" cy="340" rx="165" ry="68" stroke="#007BA8"/>
+  </g>
+
+  <g font-size="15" font-weight="bold">
+    <text x="225" y="82" text-anchor="middle" fill="#003888">Gentle exercise</text>
+    <text x="675" y="72" text-anchor="middle" fill="#3F7A1A">Help with food</text>
+    <text x="225" y="304" text-anchor="middle" fill="#B8400F">Money advice</text>
+    <text x="655" y="304" text-anchor="middle" fill="#007BA8">Company and conversation</text>
+  </g>
+
+  <g font-size="13" fill="#2C2C2A">
+    <g fill="#003888"><circle cx="130" cy="130" r="6"/><circle cx="165" cy="175" r="6"/><circle cx="250" cy="120" r="6"/><circle cx="270" cy="170" r="6"/></g>
+    <text x="142" y="134">Yoga class</text>
+    <text x="177" y="179">Tai chi</text>
+    <text x="262" y="124">Chair exercise</text>
+    <text x="282" y="174">Pilates</text>
+
+    <g fill="#5BAC26"><circle cx="575" cy="110" r="6"/><circle cx="615" cy="155" r="6"/><circle cx="690" cy="115" r="6"/></g>
+    <text x="587" y="114">Food bank</text>
+    <text x="627" y="159">Community pantry</text>
+    <text x="702" y="119">Hot meal drop-in</text>
+
+    <g fill="#F05722"><circle cx="120" cy="336" r="6"/><circle cx="160" cy="375" r="6"/><circle cx="255" cy="340" r="6"/></g>
+    <text x="132" y="340">Debt advice</text>
+    <text x="172" y="379">Help with energy bills</text>
+    <text x="267" y="344">Benefits check</text>
+
+    <g fill="#00ADEE"><circle cx="550" cy="336" r="6"/><circle cx="590" cy="375" r="6"/><circle cx="690" cy="340" r="6"/></g>
+    <text x="562" y="340">Lunch club</text>
+    <text x="602" y="379">Befriending calls</text>
+    <text x="702" y="344">Coffee morning</text>
+
+    <g fill="#888780"><circle cx="440" cy="225" r="6"/><circle cx="330" cy="428" r="6"/></g>
+    <text x="452" y="229" fill="#5F5E5A">Christmas market (fits no group)</text>
+    <text x="342" y="432" fill="#5F5E5A">Parish council page (fits no group)</text>
+  </g>
+
+  <g>
+    <path d="M330 40 L334 51 L346 51 L336 58 L340 70 L330 63 L320 70 L324 58 L314 51 L326 51 Z" fill="#EC008C"/>
+    <line x1="320" y1="70" x2="290" y2="106" stroke="#EC008C" stroke-width="1.5"/>
+    <text x="352" y="52" font-size="13" fill="#A30061">A search: "somewhere calm to</text>
+    <text x="352" y="70" font-size="13" fill="#A30061">exercise after having a baby"</text>
+  </g>
+
+  <g font-size="13" fill="#5F5E5A">
+    <circle cx="34" cy="470" r="6" fill="#888780"/>
+    <text x="48" y="474">One dot = one listing. Closer together = more alike in meaning.</text>
+    <line x1="470" y1="470" x2="510" y2="470" stroke="#5F5E5A" stroke-width="1.5" stroke-dasharray="6 5"/>
+    <text x="520" y="474">A group the computer found; people name and check it.</text>
+  </g>
+</svg>
