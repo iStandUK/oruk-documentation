@@ -91,9 +91,12 @@ python ..\oruk-enrich\extract\export_dita.py --pilot-dir <oruk-data\pilot-2> --o
 .\build-classification.ps1 -SiteUrl https://<where the site will be published>/
 ```
 
-`-SiteUrl` is required for real SKOS identifiers (the default is a placeholder). The build needs plugin 1.4 or
-later (the SKOS switch arrived in 1.4). Without DesignSystemPDF it writes the website, `print.html` and the SKOS
-files but no PDF. The PDF carries the standard document properties only; it does not embed the SKOS.
+`-SiteUrl` is required for real SKOS identifiers; the default is a placeholder, which the print document and PDF would then
+print as the address the publication is "available at". **For a PDF to share, build with `-SiteUrl ""`** (no SKOS,
+no page metadata, no address) or with the real address. The build needs plugin 1.4 or later (the SKOS switch arrived
+in 1.4). Without DesignSystemPDF it writes the website, `print.html` and the SKOS files but no PDF; pass its launcher
+with `-PdfCmd`. The PDF (tagged PDF/UA, with an outline and page-numbered cross-references) carries the standard
+document properties only; it does not embed the SKOS.
 
 ## Branding
 

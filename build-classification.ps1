@@ -7,7 +7,9 @@
   switch arrived in 1.4), and DesignSystemPDF on the PATH (or pass -PdfCmd) for the PDF. See README.md.
 
   The SKOS files need the address the site will be published at, because every concept's identifier is
-  an address. Pass it with -SiteUrl. The default is a placeholder, so no real address is claimed.
+  an address. Pass it with -SiteUrl. The default is a placeholder, so no real address is claimed, but the
+  print document and PDF then print that placeholder as "available at". For a PDF to share, build with
+  -SiteUrl "" (no SKOS, no address) or with the real address.
 #>
 param(
   [string]$Dita    = "$env:USERPROFILE\tools\dita-ot-4.4.1\bin\dita.bat",
@@ -25,14 +27,17 @@ $dargs = @(
   "--output=$outDir",
   "-Dgovuk.branding=istanduk",
   "-Dgovuk.print=yes",
-  "-Dgovuk.skos=yes",
-  "-Dgovuk.metadata=full",
-  "-Dgovuk.site.url=$SiteUrl",
   "-Dargs.css=istanduk-print.css",
   "-Dargs.cssroot=$root\theme",
   "-Dargs.copycss=yes",
   "-Dgovuk.css.assets=$root\theme\assets"
 )
+if ($SiteUrl) {
+  # SKOS identifiers and the page metadata are addresses, so they need the site's address
+  $dargs += @("-Dgovuk.skos=yes", "-Dgovuk.metadata=full", "-Dgovuk.site.url=$SiteUrl")
+} else {
+  Write-Host "No -SiteUrl: building without SKOS, page metadata or the 'available at' address."
+}
 if ($PdfCmd) { $dargs += "-Dgovuk.pdf.cmd=$PdfCmd" }
 & $Dita @dargs
 if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
