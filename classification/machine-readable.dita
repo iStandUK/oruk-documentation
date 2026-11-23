@@ -73,9 +73,10 @@
       <codeblock>dita --input=service-classification.ditamap --format=govuk --output=out/classification \
   -Dgovuk.branding=istanduk -Dgovuk.print=yes \
   -Dgovuk.skos=yes -Dgovuk.metadata=full \
-  -Dgovuk.site.url=https://example.org/oruk/classification-draft/</codeblock>
-      <p>Replace the example address with the one the site will be published at. The build script
-        <codeph>build-classification.ps1</codeph> does this and takes the address as a parameter.</p>
+  -Dgovuk.site.url=https://istanduk.github.io/oruk-documentation/classification/</codeblock>
+      <p>The address is where this website is published. The build script
+        <codeph>build-classification.ps1</codeph> does this and takes the address as a parameter, so a copy
+        published elsewhere can use its own.</p>
       <p>The website's pages also carry machine-readable descriptions in their heads when the metadata option
         is set to full. The PDF carries the standard document properties only: it does not carry the SKOS.</p>
     </section>

@@ -91,12 +91,30 @@ python ..\oruk-enrich\extract\export_dita.py --pilot-dir <oruk-data\pilot-2> --o
 .\build-classification.ps1 -SiteUrl https://<where the site will be published>/
 ```
 
-`-SiteUrl` is required for real SKOS identifiers; the default is a placeholder, which the print document and PDF would then
-print as the address the publication is "available at". **For a PDF to share, build with `-SiteUrl ""`** (no SKOS,
-no page metadata, no address) or with the real address. The build needs plugin 1.4 or later (the SKOS switch arrived
-in 1.4). Without DesignSystemPDF it writes the website, `print.html` and the SKOS files but no PDF; pass its launcher
-with `-PdfCmd`. The PDF (tagged PDF/UA, with an outline and page-numbered cross-references) carries the standard
-document properties only; it does not embed the SKOS.
+`-SiteUrl` defaults to where the website is published (see *The website*), so a local build gives the same SKOS
+identifiers as the published one, and the print document and PDF print that address as "available at". For a copy
+that should not claim an address, build with `-SiteUrl ""` (no SKOS, no page metadata, no address). The build needs
+plugin 1.4 or later (the SKOS switch arrived in 1.4). Without DesignSystemPDF it writes the website, `print.html` and
+the SKOS files but no PDF; pass its launcher with `-PdfCmd`. The PDF (tagged PDF/UA, with an outline and
+page-numbered cross-references) carries the standard document properties only; it does not embed the SKOS.
+
+## The website
+
+The documentation is published at **https://istanduk.github.io/oruk-documentation/** on GitHub Pages, from the `out/`
+folder that the workflow `.github/workflows/pages.yml` builds on every push to `main` (and by hand from the Actions tab).
+
+| Path | Content |
+|---|---|
+| `/` | A landing page (`site/index.html`) |
+| `/guide/` | The guide, with its print document and PDF |
+| `/summary/` | The executive summary, with its print document and PDF |
+| `/classification/` | The draft service classification, with its print document, PDF and the SKOS files in `vocab/` |
+
+The workflow downloads DITA-OT, the GOV.UK DITA plugin and DesignSystemPDF at pinned versions and checks each against
+its SHA-256 before using it. `out/` is not committed: it is built in CI, and a local `build.ps1` or
+`build-classification.ps1` writes the same kind of output into the same folder. Locally the guide builds into
+`out/` itself rather than `out/guide/`. To change the versions, edit the `env` block of the workflow. GitHub Pages must
+be set to **GitHub Actions** as its source (Settings, Pages).
 
 ## Branding
 

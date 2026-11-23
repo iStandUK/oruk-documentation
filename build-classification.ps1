@@ -6,16 +6,17 @@
   Needs: Java 17+, DITA-OT 4.4.1+ with the org.istanduk.gov-uk plugin 1.4 or later installed (the SKOS
   switch arrived in 1.4), and DesignSystemPDF on the PATH (or pass -PdfCmd) for the PDF. See README.md.
 
-  The SKOS files need the address the site will be published at, because every concept's identifier is
-  an address. Pass it with -SiteUrl. The default is a placeholder, so no real address is claimed, but the
-  print document and PDF then print that placeholder as "available at". For a PDF to share, build with
-  -SiteUrl "" (no SKOS, no address) or with the real address.
+  The SKOS files need the address the site is published at, because every concept's identifier is an
+  address. The default is where the website is published (https://istanduk.github.io/oruk-documentation/
+  classification/), so a local build gives the same identifiers as the published one, and the print document
+  and PDF print that address as "available at". For a copy that should not claim an address, build with
+  -SiteUrl "" (no SKOS, no page metadata, no address).
 #>
 param(
   [string]$Dita    = "$env:USERPROFILE\tools\dita-ot-4.4.1\bin\dita.bat",
   [string]$Map     = "service-classification.ditamap",
   [string]$Out     = "out\classification",
-  [string]$SiteUrl = "https://example.org/oruk/classification-draft/",
+  [string]$SiteUrl = "https://istanduk.github.io/oruk-documentation/classification/",
   [string]$PdfCmd  = ""
 )
 $ErrorActionPreference = "Stop"

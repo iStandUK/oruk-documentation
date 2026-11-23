@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ORUK documentation</title>
+  <meta name="description" content="Plain-English documentation for the Open Referral UK service classification and search work, and a draft service classification discovered from real local directories.">
+  <style>
+    :root { --brand: #003888; --text: #1a2230; --muted: #4a5565; --rule: #d3d9e2; --bg: #ffffff; --note: #eef3fb; }
+    @media (prefers-color-scheme: dark) {
+      :root { --brand: #8fb2ff; --text: #e6eaf1; --muted: #a9b3c2; --rule: #2e3849; --bg: #11161f; --note: #1b2638; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 1rem/1.6 Arial, Helvetica, sans-serif; }
+    main { max-width: 44rem; margin: 0 auto; padding: 2.5rem 1rem 4rem; }
+    h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .5rem; color: var(--brand); }
+    h2 { font-size: 1.25rem; margin: 2.25rem 0 .25rem; }
+    p { margin: .5rem 0; max-width: 40rem; }
+    a { color: var(--brand); }
+    a:focus-visible { outline: 3px solid var(--brand); outline-offset: 2px; }
+    ul { margin: .5rem 0; padding-left: 1.25rem; }
+    .lede { color: var(--muted); font-size: 1.1rem; }
+    .note { background: var(--note); border-left: 4px solid var(--brand); padding: .75rem 1rem; margin: 1.5rem 0; }
+    .links { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: .25rem 1.25rem; }
+    footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: .9rem; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>ORUK documentation</h1>
+  <p class="lede">Plain-English documentation for the Open Referral UK (ORUK) service classification and search work, published by iStandUK.</p>
+
+  <h2>Finding local services by what they mean</h2>
+  <p>A guide for readers with no background in artificial intelligence: why local service directories describe services in different ways, and how a classification can be discovered from the descriptions themselves.</p>
+  <ul class="links">
+    <li><a href="guide/index.html">Read the guide</a></li>
+    <li><a href="guide/finding-services-by-meaning.pdf">PDF</a></li>
+  </ul>
+
+  <h2>Executive summary</h2>
+  <p>The aim, the problem and the dimensions, in a shorter form.</p>
+  <ul class="links">
+    <li><a href="summary/index.html">Read the summary</a></li>
+    <li><a href="summary/executive-summary.pdf">PDF</a></li>
+  </ul>
+
+  <h2>The draft service classification</h2>
+  <p>An early demonstrator: a classification discovered from real local directories, with every category as a concept page, the needs it is tested against, and the classification as SKOS.</p>
+  <div class="note"><p><strong>This is a draft.</strong> The names and definitions were written by a language model, and no person has reviewed them. Identifiers change whenever the pipeline is re-run.</p></div>
+  <ul class="links">
+    <li><a href="classification/index.html">Browse the classification</a></li>
+    <li><a href="classification/service-classification.pdf">PDF</a></li>
+  </ul>
+  <p>SKOS vocabularies (Turtle):
+    <a href="classification/vocab/service-type.ttl">service type</a>,
+    <a href="classification/vocab/audience.ttl">audience</a>,
+    <a href="classification/vocab/eligibility.ttl">eligibility</a>.
+    The same files are also published as JSON-LD beside them.</p>
+
+  <footer>
+    <p>Written in DITA and published with the iStandUK GOV.UK DITA plugin. The source is in the <a href="https://github.com/iStandUK/oruk-documentation">oruk-documentation</a> repository.</p>
+  </footer>
+</main>
+</body>
+</html>

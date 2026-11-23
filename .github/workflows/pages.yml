@@ -1,0 +1,109 @@
+name: pages
+
+# Builds the documentation and publishes it on GitHub Pages from the out/ folder:
+#   out/index.html           a landing page (site/index.html)
+#   out/guide/               the guide, "Finding local services by what they mean"
+#   out/summary/             the executive summary
+#   out/classification/      the draft service classification, with its SKOS (vocab/)
+# Each folder holds the website, the print document and, when DesignSystemPDF is found, the PDF.
+#
+# The toolchain is downloaded at a pinned version and checked against a SHA-256 before it is used:
+# DITA-OT, the iStandUK GOV.UK DITA plugin and DesignSystemPDF. Nothing else is fetched.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# one deployment at a time; a later one waits rather than cancelling a running one
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+env:
+  DITA_OT_VERSION: "4.4.1"
+  # SHA-256 of dita-ot-4.4.1.zip as published on the DITA-OT release page
+  DITA_OT_SHA256: 154414c1debb548e923bf77e9a09019e249a8887680ff4bfbd8e137de9e8e250
+  PLUGIN_VERSION: "1.4.1"
+  PDF_VERSION: "0.1.2"
+  # the address the site is published at; the SKOS identifiers and the PDF's "available at" line use it
+  SITE_URL: https://istanduk.github.io/oruk-documentation/
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write      # deploy to Pages
+      id-token: write   # prove to Pages that the deployment comes from this workflow
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - uses: actions/setup-java@77dd5b2ce225ea11469928ac317850245a74ae78 # v6.2.0
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Install DITA-OT, the plugin and DesignSystemPDF
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/tools" && cd "$RUNNER_TEMP/tools"
+
+          curl -fsSL -o dita-ot.zip \
+            "https://github.com/dita-ot/dita-ot/releases/download/${DITA_OT_VERSION}/dita-ot-${DITA_OT_VERSION}.zip"
+          echo "${DITA_OT_SHA256}  dita-ot.zip" | sha256sum -c -
+          unzip -q dita-ot.zip
+          echo "$PWD/dita-ot-${DITA_OT_VERSION}/bin" >> "$GITHUB_PATH"
+
+          gh release download "v${PLUGIN_VERSION}" --repo iStandUK/govuk-dita-plugin \
+            --pattern "org.istanduk.gov-uk-${PLUGIN_VERSION}.zip" --pattern "org.istanduk.gov-uk-${PLUGIN_VERSION}.zip.sha256"
+          sha256sum -c "org.istanduk.gov-uk-${PLUGIN_VERSION}.zip.sha256"
+          "dita-ot-${DITA_OT_VERSION}/bin/dita" install "./org.istanduk.gov-uk-${PLUGIN_VERSION}.zip"
+
+          gh release download "pdf-v${PDF_VERSION}" --repo iStandUK/govuk-dita-plugin \
+            --pattern "designsystempdf-${PDF_VERSION}.zip" --pattern "designsystempdf-${PDF_VERSION}.zip.sha256"
+          sha256sum -c "designsystempdf-${PDF_VERSION}.zip.sha256"
+          unzip -q "designsystempdf-${PDF_VERSION}.zip" -d designsystempdf
+          bin_dir=$(find "$PWD/designsystempdf" -type d -name bin | head -n 1)
+          chmod +x "$bin_dir"/designsystempdf
+          echo "$bin_dir" >> "$GITHUB_PATH"
+
+      - name: Build the three publications into out/
+        run: |
+          set -euo pipefail
+          common=(--format=govuk -Dgovuk.branding=istanduk -Dgovuk.print=yes -Dgovuk.pdf=yes
+                  -Dargs.css=istanduk-print.css -Dargs.cssroot="$PWD/theme" -Dargs.copycss=yes
+                  -Dgovuk.css.assets="$PWD/theme/assets")
+          dita --input=finding-services-by-meaning.ditamap --output=out/guide "${common[@]}"
+          dita --input=executive-summary.ditamap --output=out/summary "${common[@]}"
+          dita --input=service-classification.ditamap --output=out/classification "${common[@]}" \
+               -Dgovuk.skos=yes -Dgovuk.metadata=full -Dgovuk.site.url="${SITE_URL}classification/"
+          cp site/index.html out/index.html
+
+      - name: Check what was built
+        run: |
+          set -euo pipefail
+          for f in out/index.html out/guide/index.html out/summary/index.html out/classification/index.html \
+                   out/guide/finding-services-by-meaning.pdf out/summary/executive-summary.pdf \
+                   out/classification/service-classification.pdf \
+                   out/classification/vocab/service-type.ttl out/classification/vocab/audience.ttl \
+                   out/classification/vocab/eligibility.ttl; do
+            test -s "$f" || { echo "::error::missing or empty: $f"; exit 1; }
+          done
+          du -sh out out/*
+
+      - name: Upload the site
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: out
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
