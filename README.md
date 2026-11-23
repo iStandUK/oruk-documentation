@@ -17,6 +17,9 @@ work, written in DITA with SVG diagrams and published with the DITA Open Toolkit
 | `images/` | SVG diagrams, in the iStandUK palette |
 | `theme/` | Publisher stylesheet and logo that brand the print document and PDF |
 | `build.ps1`, `build.sh` | Build the website, print document and PDF into `out/` |
+| `service-classification.ditamap` | Bookmap for the **draft service classification**: every category a concept topic, grouped by dimension, with the needs, the needs-test results and the method (generated, see below) |
+| `classification/` | The draft classification's topics, subject-scheme maps (the SKOS), keys and two hand-written pages (generated, see below) |
+| `build-classification.ps1` | Builds the draft classification as a website, print document and SKOS files (and a PDF when the generator is available) |
 | `maintenance/REFRESHING.md` | How to bring the guide up to date as the work progresses |
 
 The guide explains the work in [oruk-harvest](https://github.com/iStandUK/oruk-harvest),
@@ -59,6 +62,38 @@ To build the executive summary instead, into its own folder:
 ```powershell
 .\build.ps1 -Map executive-summary.ditamap -Out out\summary
 ```
+
+## The draft service classification (a demonstrator)
+
+`service-classification.ditamap` publishes the classification that the pilot pipeline discovered from real
+directory data, as **a draft for people to review**. It is not a release: the names are model-made, no person has
+reviewed a category, and the identifiers are cluster numbers of one run.
+
+- **Every category is a concept topic** (`classification/service-type/`, `audience/`, `eligibility/`): name,
+  one-sentence definition, what belongs, what does not (each linking to the category it belongs in), how people ask
+  for it, its group, the needs that point at it, and the evidence and review flags.
+- **The map follows the hierarchy**: a part for each dimension, a chapter for each group, the categories beneath
+  it. It also carries the needs (each a concept that links to its categories and back), the needs-test results,
+  the review queue, and the method, reusing the guide's own topics. A `reltable` links categories that are easily
+  confused with one another.
+- **Cross-references are keyrefs throughout.** `classification/schemes/*.ditamap` are DITA subject schemes: they
+  define a key for every group and category (pointing at its topic) and carry the hierarchy.
+- **SKOS.** The build's `govuk.skos` switch turns each subject scheme into `vocab/<dimension>.ttl` and `.jsonld`
+  (a `skos:ConceptScheme`; groups are top concepts; categories are narrower concepts with label, definition and
+  notation). Alternative labels, `skos:related` and matches to other lists are not in the files yet: the plugin
+  does not read them from concept topics (see `classification/machine-readable.dita`).
+
+Everything under `classification/` except `how-to-read.dita` and `machine-readable.dita`, and the bookmap, is
+**generated; do not edit it by hand.** Regenerate it from a pilot run's folder with the exporter in oruk-enrich:
+
+```powershell
+python ..\oruk-enrich\extract\export_dita.py --pilot-dir <oruk-data\pilot-2> --out . --date 2026-11-23
+.\build-classification.ps1 -SiteUrl https://<where the site will be published>/
+```
+
+`-SiteUrl` is required for real SKOS identifiers (the default is a placeholder). The build needs plugin 1.4 or
+later (the SKOS switch arrived in 1.4). Without DesignSystemPDF it writes the website, `print.html` and the SKOS
+files but no PDF. The PDF carries the standard document properties only; it does not embed the SKOS.
 
 ## Branding
 

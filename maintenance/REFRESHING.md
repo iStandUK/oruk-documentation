@@ -179,6 +179,24 @@ Give it access to this repository and its siblings, and a prompt along these lin
 Ask it to show the list of proposed changes first; the guide makes claims about work in
 progress, and a person should confirm what is now true.
 
+## 8a. The draft service classification
+
+`service-classification.ditamap` and `classification/` are generated from a pilot run, not written by hand
+(README, *The draft service classification*). They do not follow the fact map above. To refresh them:
+
+1. Run the pipeline (harvest, corpus, extraction, embeddings, clustering, naming, needs test) in oruk-enrich and
+   keep the run's folder (for 23 Nov: `oruk-data/pilot-2`).
+2. Regenerate: `python ..\oruk-enrich\extract\export_dita.py --pilot-dir <run folder> --out . --date <date>`.
+   It deletes and rewrites `classification/service-type`, `audience`, `eligibility`, `needs`, `review` and
+   `schemes`, and the bookmap, keys and status page. It leaves `how-to-read.dita` and `machine-readable.dita`.
+3. Rebuild with `build-classification.ps1` and check: no DITA-OT errors, the plugin's `check_links.py` and
+   `check_metadata.py` clean, and the SKOS files present.
+4. Read `read-this-first.dita` as built. Its numbers come from the run; its wording about what is *not* true
+   (not reviewed, not de-duplicated, not a release) must stay true until a person has done those things. When
+   they have, change the generator's wording, not the generated page.
+5. Identifiers (`svc-044`) are cluster numbers of one run and are renumbered by every run. Nothing outside this
+   repository may cite them until a release assigns stable ids.
+
 ## 9. Refresh log
 
 Add a row at each refresh.

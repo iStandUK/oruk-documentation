@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="machine-readable" xml:lang="en-GB">
+  <title>The classification as SKOS</title>
+  <shortdesc>Each dimension is also published as a SKOS concept scheme, so that other systems can read the draft categories and their hierarchy without scraping these pages.</shortdesc>
+  <conbody>
+    <note type="attention">The SKOS describes a draft. Its concepts carry the draft identifiers of one run, which change
+      whenever the pipeline is re-run. Do not use them as stable identifiers.</note>
+    <section>
+      <title>What is published</title>
+      <p>When the website is built with the SKOS option on, the build writes one file pair for each
+        dimension, in two syntaxes with the same content:</p>
+      <ul>
+        <li><codeph>vocab/service-type.ttl</codeph> and <codeph>vocab/service-type.jsonld</codeph></li>
+        <li><codeph>vocab/audience.ttl</codeph> and <codeph>vocab/audience.jsonld</codeph></li>
+        <li><codeph>vocab/eligibility.ttl</codeph> and <codeph>vocab/eligibility.jsonld</codeph></li>
+      </ul>
+      <p>Each file holds a <codeph>skos:ConceptScheme</codeph>. The groups are its top concepts and the
+        categories are the concepts beneath them.</p>
+    </section>
+    <section>
+      <title>How the pages map to SKOS</title>
+      <simpletable relcolwidth="2* 3*">
+        <sthead>
+          <stentry>In the DITA</stentry>
+          <stentry>In the SKOS</stentry>
+        </sthead>
+        <strow>
+          <stentry>A dimension's subject scheme map</stentry>
+          <stentry>A <codeph>skos:ConceptScheme</codeph>, with the dimension's title</stentry>
+        </strow>
+        <strow>
+          <stentry>A group, as an entry in the subject scheme</stentry>
+          <stentry>A <codeph>skos:Concept</codeph> that is a top concept of the scheme</stentry>
+        </strow>
+        <strow>
+          <stentry>A category, nested under its group</stentry>
+          <stentry>A <codeph>skos:Concept</codeph> with <codeph>skos:broader</codeph> its group (and the group
+            <codeph>skos:narrower</codeph> it)</stentry>
+        </strow>
+        <strow>
+          <stentry>The category's name</stentry>
+          <stentry><codeph>skos:prefLabel</codeph></stentry>
+        </strow>
+        <strow>
+          <stentry>The category's one-sentence definition</stentry>
+          <stentry><codeph>skos:definition</codeph></stentry>
+        </strow>
+        <strow>
+          <stentry>The key, such as <codeph>svc-044</codeph></stentry>
+          <stentry><codeph>skos:notation</codeph>, and the fragment of the concept's address</stentry>
+        </strow>
+      </simpletable>
+    </section>
+    <section>
+      <title>What is not in the SKOS yet</title>
+      <p>The concept pages carry more than the SKOS files do. The publishing plugin reads names, definitions,
+        notations and the hierarchy from the subject scheme. It does not yet read these from concept pages, so
+        they appear on the pages but not in the files:</p>
+      <ul>
+        <li>the everyday search phrases, which would be alternative labels (<codeph>skos:altLabel</codeph>)</li>
+        <li>the boundaries between categories, which would be <codeph>skos:related</codeph> links</li>
+        <li>matches to other lists, such as the Local Government Association's standard lists
+          (<codeph>skos:exactMatch</codeph> and <codeph>skos:closeMatch</codeph>). No such mapping has
+          been made for this draft.</li>
+      </ul>
+      <p>The plugin's design records reading concept topics as SKOS concepts as planned work, not built.</p>
+    </section>
+    <section>
+      <title>Building it</title>
+      <p>The SKOS files need the site's address, because every concept's identifier is an address. Build with
+        the plugin's SKOS switch on and the site address set:</p>
+      <codeblock>dita --input=service-classification.ditamap --format=govuk --output=out/classification \
+  -Dgovuk.branding=istanduk -Dgovuk.print=yes \
+  -Dgovuk.skos=yes -Dgovuk.metadata=full \
+  -Dgovuk.site.url=https://example.org/oruk/classification-draft/</codeblock>
+      <p>Replace the example address with the one the site will be published at. The build script
+        <codeph>build-classification.ps1</codeph> does this and takes the address as a parameter.</p>
+      <p>The website's pages also carry machine-readable descriptions in their heads when the metadata option
+        is set to full. The PDF carries the standard document properties only: it does not carry the SKOS.</p>
+    </section>
+    <section>
+      <title>Where to go next</title>
+      <ul>
+        <li><xref keyref="read-this-first"/></li>
+        <li><xref keyref="how-to-read"/></li>
+      </ul>
+    </section>
+  </conbody>
+</concept>

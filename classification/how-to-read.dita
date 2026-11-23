@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="how-to-read" xml:lang="en-GB">
+  <title>How to read a category page</title>
+  <shortdesc>Every category is a page of its own, with the same parts in the same order, so that a reviewer can compare them quickly.</shortdesc>
+  <conbody>
+    <p>The classification has three dimensions. Each one answers a separate question about a service, and a
+      service can have a value in all three: what is offered is kept apart from who it is for and from what
+      a person must meet to use it. The glossary entry for <xref keyref="gloss-dimension"/> explains why.</p>
+    <section>
+      <title>The parts of a category page</title>
+      <dl>
+        <dlentry>
+          <dt>Title and lead sentence</dt>
+          <dd>The category's name, and a one-sentence definition. Both were written by a language model
+            from the clustered phrases. A reviewer decides whether to keep, rename or reword them.</dd>
+        </dlentry>
+        <dlentry>
+          <dt>What belongs here</dt>
+          <dd>Short examples drawn from the members of the cluster. They show the range, not every case.</dd>
+        </dlentry>
+        <dlentry>
+          <dt>What does not belong here</dt>
+          <dd>Things that look similar but sit elsewhere. Each links to the category it belongs in, so a
+            reviewer can follow the boundary. Where the neighbouring group was not stable enough to be
+            named, the page says so instead of linking.</dd>
+        </dlentry>
+        <dlentry>
+          <dt>How people might ask for it</dt>
+          <dd>Everyday search phrases for the category. They are also the page's search keywords.</dd>
+        </dlentry>
+        <dlentry>
+          <dt>Where it sits</dt>
+          <dd>The group the category belongs to and the dimension it is part of.</dd>
+        </dlentry>
+        <dlentry>
+          <dt>Needs that point here</dt>
+          <dd>For service-type categories, the needs in the draft catalogue that name the category. The
+            need pages link back.</dd>
+        </dlentry>
+        <dlentry>
+          <dt>Evidence and status</dt>
+          <dd>How many records came from each directory, how steady the group was when the data was
+            resampled, whether it is a single kind of thing, and any reason a person should look at it
+            first.</dd>
+        </dlentry>
+      </dl>
+    </section>
+    <section>
+      <title>Reading the evidence</title>
+      <ul>
+        <li><b>Stability</b> is the share of resamplings in which the group re-formed, from 0 to 1. A group
+          at 0.6 or above is treated as having recurred. A lower value means the group may be an accident
+          of the sample.</li>
+        <li><b>Unconfirmed</b> categories did not recur reliably. They have a name only because a need in
+          the catalogue points at them, so that a stability filter cannot silently remove something people
+          need.</li>
+        <li><b>Records by directory</b> shows whether a category is one directory's habit. A category that
+          one directory holds almost entirely is flagged.</li>
+        <li><b>Identifiers</b> such as <codeph>svc-044</codeph> are cluster numbers of this run. A new run
+          renumbers them, so they are for cross-referring within this document and not for use as stable
+          identifiers.</li>
+      </ul>
+    </section>
+    <section>
+      <title>Where to go next</title>
+      <ul>
+        <li><xref keyref="read-this-first"/></li>
+        <li><xref keyref="review-queue"/></li>
+        <li><xref keyref="machine-readable"/></li>
+      </ul>
+    </section>
+  </conbody>
+</concept>
